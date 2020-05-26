@@ -1,0 +1,2 @@
+nbObjet = 3; // le nombre total des objects candidats
+poidsMax = 32; // le poid maximal que le sac peut porter

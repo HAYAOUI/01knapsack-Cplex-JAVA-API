@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="x64_win64">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://C:/Program Files/IBM/ILOG/CPLEX_Studio128/cplex/bin/x64_win64" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
