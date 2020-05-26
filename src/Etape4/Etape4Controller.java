@@ -44,19 +44,6 @@ public class Etape4Controller {
      List<String> ListOfELemSize = controller.GetSizeList();
 
 
-     public List<String> ListOfChosenItems(){
-         List<String> ChosenELemNames;
-         for (int i = 0; i < NofChosenElem) {
-             
-         }
-         ChosenELemNames.add(ListOfELemName.get)
-
-
-             return ChosenELemNames;
-     }
-
-
-
 
 
     IloCplex model;
@@ -92,13 +79,34 @@ public class Etape4Controller {
 
                 System.out.println("Variable " + j + ": Value = " + incx[j]);
             }
+
+
+
+
+
+                List<String> ChosenELemNames = new ArrayList<>();
+                List<String> ChosenELemPrice = new ArrayList<>();
+                List<String> ChosenELemSize = new ArrayList<>();
+
+                for (int i = 0; i < ItemsMatrix.size() ;i++) {
+
+                    ChosenELemNames.add(ListOfELemName.get(ItemsMatrix.get(i)));
+                    ChosenELemPrice.add(ListOfELemPrice.get(ItemsMatrix.get(i)));
+                    ChosenELemSize.add(ListOfELemSize.get(ItemsMatrix.get(i)));
+
+                }
+
+
+
             System.out.println();
             System.out.println("N of chosen elements "+ NofChosenElem);
             System.out.println(" items matrix"  + ItemsMatrix);
             System.out.println("List of all Elem Name " + ListOfELemName);
             System.out.println("List of all Elem Size " + ListOfELemSize);
             System.out.println("List of all Elem Price " + ListOfELemPrice);
-
+            System.out.println("chosen elements names "+ChosenELemNames);
+            System.out.println("chosen elements Prices " + ChosenELemPrice);
+            System.out.println("Chosen elements sizes" + ChosenELemSize);
            ObjectValue = (int) model.getObjValue();
 
 
@@ -114,6 +122,7 @@ public class Etape4Controller {
             e.printStackTrace();
         }
     }
+
 
 
     public void Read_lp_file() {
