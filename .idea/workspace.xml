@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="getting the values(Names, Price, Size) of the chosen elements by the algorithme">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="adding the chosen items into the final table along with their prices and values">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Etape2/Etape2Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Etape2/Etape2Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Etape2/Etape2Controller$Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Etape2/Etape2Controller$Element.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Etape2/Etape2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Etape2/Etape2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Etape4/Etape4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Etape4/Etape4.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/Etape4/Etape4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/Etape4/Etape4Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/SacADos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/SacADos.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/SacADos.lp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/SacADos.lp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Etape2/Etape2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Etape2/Etape2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Etape4/Etape4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Etape4/Etape4.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Etape4/Etape4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Etape4/Etape4Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590528120811</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding the chosen items into the final table along with their prices and values">
+      <created>1590601331404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590601331404</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -260,7 +257,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="getting the values(Names, Price, Size) of the chosen elements by the algorithme" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting the values(Names, Price, Size) of the chosen elements by the algorithme" />
+    <MESSAGE value="adding the chosen items into the final table along with their prices and values" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding the chosen items into the final table along with their prices and values" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="92" key="#Project_Structure" timestamp="1590215143475">
@@ -287,10 +285,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="528" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1590599876088" />
-    <state x="455" y="28" key="CommitChangelistDialog2" timestamp="1590528119360">
+    <state x="455" y="28" key="CommitChangelistDialog2" timestamp="1590601329913">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="455" y="28" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1590528119360" />
+    <state x="455" y="28" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1590601329913" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1590212043477">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -331,10 +329,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="448" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1590599666056" />
-    <state x="361" y="166" key="Vcs.Push.Dialog.v2" timestamp="1590528124610">
+    <state x="503" y="348" key="VCS.ChangelistChooser" timestamp="1590601348502">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1590528124610" />
+    <state x="503" y="348" key="VCS.ChangelistChooser/0.0.1536.864@0.0.1536.864" timestamp="1590601348501" />
+    <state x="361" y="166" key="Vcs.Push.Dialog.v2" timestamp="1590601335182">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1590601335182" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590417515624">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
