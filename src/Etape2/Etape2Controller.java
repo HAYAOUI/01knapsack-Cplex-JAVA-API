@@ -1,6 +1,8 @@
 package Etape2;
 
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -54,7 +56,7 @@ public class Etape2Controller implements Initializable {
     private Button Final_submit;
 
 
-    public class Element {
+    public static class Element {
         private SimpleStringProperty Name;
         private SimpleStringProperty Size;
         private SimpleStringProperty Price;
@@ -136,7 +138,7 @@ public class Etape2Controller implements Initializable {
 
     }
 
-    //create a Elements Name array list
+    //create a Elements array lists
     public static List<String> ELements_nameList = new ArrayList<>();
     public static List<String> ELements_PriceList = new ArrayList<>();
     public static List<String> ELements_SizeList = new ArrayList<>();
@@ -290,4 +292,9 @@ public class Etape2Controller implements Initializable {
         assert Final_submit != null : "fx:id=\"Final_submit\" was not injected: check your FXML file 'Etape2.fxml'.";
 
     }
-}
+
+
+
+
+
+    }

@@ -1,4 +1,4 @@
 nbObjet = 7; // le nombre total des objects candidats
 poidsMax = 100; // le poid maximal que le sac peut porter
-valeur =[6, 10, 5, 4, 3, 2, 2];
-poids = [56, 62, 32, 48, 25, 3, 3];
+valeur =[3, 9, 9, 9, 9, 9, 9];
+poids = [5, 5, 500, 500, 500, 500, 500];
