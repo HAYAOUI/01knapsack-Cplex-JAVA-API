@@ -1,7 +1,6 @@
 package sample;
 
 import Etape2.Etape2Controller;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -17,7 +16,6 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.Scanner;
 
 public class Etape1Controller {
     public static String NbOfElem;
@@ -102,7 +100,6 @@ public class Etape1Controller {
 
     public void DataFileModify(){
 
-
         try{
             final File f = new File(Main.class.getProtectionDomain().getCodeSource().getLocation().getPath());
             String ProgPath = f.toString().replace("%20"," ");
@@ -118,9 +115,7 @@ public class Etape1Controller {
             bw.close();
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
-
             br.close();
-
 
         }catch(IOException e){
             e.printStackTrace();
@@ -150,30 +145,15 @@ public class Etape1Controller {
 
             }
         });
-    //    assert nbOfElements != null : "fx:id=\"nbOfElements\" was not injected: check your FXML file 'Etape1.fxml'.";
-  //      assert Max_cap != null : "fx:id=\"Max_cap\" was not injected: check your FXML file 'Etape1.fxml'.";
-   //     assert submit != null : "fx:id=\"submit\" was not injected: check your FXML file 'Etape1.fxml'.";
+
 
     }
 
 
     public void submitbuttonpushed(ActionEvent event){
-
-
-
-    }
-    private void handleButton1Action(ActionEvent event) {
-
-        System.out.println(nbOfElements.getText());
-        System.out.println(Max_cap.getText());
-
-
     }
 
 
-
-
-
-    public void ReadData(InputMethodEvent inputMethodEvent) {
+    public void ReadDat(InputMethodEvent inputMethodEvent) {
     }
 }

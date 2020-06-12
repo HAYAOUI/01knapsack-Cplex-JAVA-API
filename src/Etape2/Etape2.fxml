@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
-
+<?import javafx.scene.text.*?>
 <AnchorPane prefHeight="556.0" prefWidth="573.0" scaleShape="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Etape2.Etape2Controller">
    <children>
-      <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etape 2" wrappingWidth="62.929687499999886" />
-      <Text layoutX="14.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de l'element" />
-      <TextField fx:id="Elem_name" layoutX="120.0" layoutY="107.0" />
-      <Text layoutX="336.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poids de l'element" />
-      <TextField fx:id="Elem_size" layoutX="442.0" layoutY="106.0" prefHeight="26.0" prefWidth="62.0" />
-      <Text layoutX="14.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix de l'element" />
-      <TextField fx:id="Elem_price" layoutX="120.0" layoutY="166.0" prefHeight="26.0" prefWidth="55.0" />
-      <Button fx:id="Submit_elem" layoutX="371.0" layoutY="166.0" mnemonicParsing="false" onAction="#Submit_elemPushed" text="Soumettre l'element" />
-      <Text layoutX="188.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="il vous reste" />
-      <Label fx:id="Re_elem" layoutX="281.0" layoutY="221.0" text="Re_elem" />
-      <Text layoutX="347.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="elements" />
-      <Text layoutX="171.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Element Numero :" wrappingWidth="97.32421875" />
-      <Label fx:id="Cur_elem" layoutX="283.0" layoutY="61.0" text="Cur_elem" />
-      <Button fx:id="Final_submit" contentDisplay="CENTER" layoutX="227.0" layoutY="505.0" mnemonicParsing="false" onAction="#Final_SubmitPushed" text="Finaliser l'operation" />
+      <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etape 2"
+            wrappingWidth="62.929687499999886"/>
+      <Text layoutX="14.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de l'objet"/>
+      <TextField fx:id="Elem_name" layoutX="120.0" layoutY="107.0"/>
+      <Text layoutX="336.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poids de l'objet"/>
+      <TextField fx:id="Elem_size" layoutX="442.0" layoutY="106.0" prefHeight="26.0" prefWidth="62.0"/>
+      <Text layoutX="14.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix de l'objet"/>
+      <TextField fx:id="Elem_price" layoutX="120.0" layoutY="166.0" prefHeight="26.0" prefWidth="55.0"/>
+      <Button fx:id="Submit_elem" layoutX="371.0" layoutY="166.0" mnemonicParsing="false" onAction="#Submit_elemPushed"
+              text="Ajouter l'élément"/>
+      <Text layoutX="195.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="il vous reste"/>
+      <Label fx:id="Re_elem" alignment="CENTER" contentDisplay="CENTER" layoutX="304.0" layoutY="217.0" text="Re_elem">
+         <font>
+            <Font name="System Bold" size="16.0"/>
+         </font>
+      </Label>
+      <Text layoutX="335.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="objet"/>
+      <Text layoutX="194.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="vous avez ajouté"
+            wrappingWidth="148.80000000000007"/>
+      <Label fx:id="Cur_elem" alignment="CENTER" contentDisplay="CENTER" layoutX="324.0" layoutY="61.0" text="Cur_elem">
+         <font>
+            <Font name="System Bold" size="17.0"/>
+         </font>
+      </Label>
+      <Button fx:id="Final_submit" contentDisplay="CENTER" layoutX="227.0" layoutY="505.0" mnemonicParsing="false"
+              onAction="#Final_SubmitPushed" text="Finaliser l'opération"/>
       <TableView fx:id="tableView" layoutX="26.0" layoutY="273.0" prefHeight="206.0" prefWidth="502.0">
-        <columns>
-          <TableColumn fx:id="ElementName" prefWidth="159.99993133544922" text="Nom" />
-          <TableColumn fx:id="ElementSize" prefWidth="165.5999755859375" text="Poid" />
-            <TableColumn fx:id="ElementPrice" prefWidth="155.20004272460938" text="Prix" />
-        </columns>
+         <columns>
+            <TableColumn fx:id="ElementName" prefWidth="159.99993133544922" text="Nom"/>
+            <TableColumn fx:id="ElementSize" prefWidth="165.5999755859375" text="Poid"/>
+            <TableColumn fx:id="ElementPrice" prefWidth="155.20004272460938" text="valeur"/>
+         </columns>
       </TableView>
-      <Text layoutX="14.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les elements candidats" />
+      <Text layoutX="14.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Les objets que vous avez ajouté  "/>
+      <Text layoutX="361.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objets"/>
    </children>
 </AnchorPane>

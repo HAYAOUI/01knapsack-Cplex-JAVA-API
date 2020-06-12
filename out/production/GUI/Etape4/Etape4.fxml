@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
-
 <AnchorPane prefHeight="515.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Etape4.Etape4Controller">
    <children>
-      <Text layoutX="54.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les elements choisis sont" />
-      <Text layoutX="66.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="le prix maximal est" />
-      <Label fx:id="Max_Price" layoutX="320.0" layoutY="338.0" text="Max_Price" />
-      <Text layoutX="66.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La taille occuppe par ces elements" />
-      <Label fx:id="Cap_sum" layoutX="292.0" layoutY="392.0" text="Cap_sum" />
+      <Text layoutX="30.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les objets choisis sont :" />
+      <Text layoutX="66.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La valeur maximal est :" />
+      <Label fx:id="Max_Price" contentDisplay="CENTER" layoutX="320.0" layoutY="338.0" text="Max_Price" />
+      <Text layoutX="66.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le poids occupée par ces objets" />
+      <Label fx:id="Cap_sum" alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="392.0" text="Cap_sum" AnchorPane.rightAnchor="260.0" />
       <Text layoutX="343.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
-      <Label fx:id="Max_Cap" layoutX="355.0" layoutY="392.0" text="Max_cap" />
+      <Label fx:id="Max_Cap" contentDisplay="CENTER" layoutX="355.0" layoutY="392.0" text="Max_cap" />
       <Button fx:id="Restart" layoutX="274.0" layoutY="440.0" mnemonicParsing="false" text="Recommancer" />
       <TableView fx:id="FinalTable" layoutX="22.0" layoutY="85.0" prefHeight="222.0" prefWidth="562.0">
         <columns>
-          <TableColumn fx:id="Final_Elements" prefWidth="199.20001602172852" text="L'element choisi" />
-          <TableColumn fx:id="Final_Prices" minWidth="0.0" prefWidth="162.3999481201172" text="Sa valeur" />
-            <TableColumn fx:id="Final_Size" prefWidth="198.39998779296877" text="Son poids" />
+          <TableColumn fx:id="Final_Elements" prefWidth="199.20001602172852" text="Nom" />
+          <TableColumn fx:id="Final_Prices" minWidth="0.0" prefWidth="162.3999481201172" text="Poids" />
+            <TableColumn fx:id="Final_Size" prefWidth="198.39998779296877" text="Valeur" />
         </columns>
       </TableView>
    </children>

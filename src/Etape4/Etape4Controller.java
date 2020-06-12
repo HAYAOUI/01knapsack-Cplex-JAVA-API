@@ -5,7 +5,6 @@ import Etape2.Etape2Controller.Element;
 import ilog.concert.IloException;
 import ilog.concert.IloLPMatrix;
 import ilog.cplex.IloCplex;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -90,10 +89,8 @@ public class Etape4Controller {
             System.out.println(Arrays.toString(incx));
             for (int j = 0; j < incx.length; j++) {
 
-
                 if (incx[j] != 0) {
                     NofChosenElem++;
-
                     ItemsMatrix.add(j);
                 }
 
@@ -144,7 +141,7 @@ public class Etape4Controller {
         Max_Cap.setText(String.valueOf(max_cap));
         System.out.println(max_cap);
         Max_Price.setText(String.valueOf(ObjectValue));
-
+        Cap_sum.setText(String.valueOf(CalculaCapSum()));
 
         Final_Elements.setCellValueFactory(new PropertyValueFactory<Element, String>("Name"));
         Final_Size.setCellValueFactory(new PropertyValueFactory<Element, String>("Size"));
@@ -159,10 +156,23 @@ public class Etape4Controller {
 
         ObservableList<Element> Chosen = FXCollections.observableArrayList();
         for (int i = 0; i < NofChosenElem; i++) {
-            Chosen.add(new Element(ChosenELemNames.get(i), ChosenELemSize.get(i), ChosenELemPrice.get(i)));
+            Chosen.add(new Element(ChosenELemNames.get(i), ChosenELemPrice.get(i), ChosenELemSize.get(i)));
 
         }
         return Chosen;
+
+    }
+
+    public int CalculaCapSum() {
+        int CapSum = 0;
+        for (int i = 0; i < NofChosenElem; i++) {
+            CapSum = CapSum + Integer.parseInt(ChosenELemSize.get(i));
+        }
+        return CapSum;
+    }
+
+    public void Restart() {
+
 
     }
 }

@@ -1,0 +1,14 @@
+Pour pouvoir lancer le projet il faut tout d'abord definir des bibliotheques concernant CPLEX qui se trouvent dans des chemins differents pour chaque utilisateur.
+
+cplex :	{"chemin d'installation de CPLEX"}/cplex/lib/cplex.jar
+
+ILOG CP : {"chemin d'installation de CPLEX"}/cpoptimizer/lib/ILOG.CP.jar
+
+OPALL : {"chemin d'installation de CPLEX"}/opl/lib/oplall.jar
+
+x64_win64 : {"chemin d'installation de CPLEX"}/cplex/bin/x64_win64 
+
+
+Le projet java peut etre lancee a partir de fichier sample/Main.java
+
+Le projet CPLEX sont les deux fichier SacADos.mod et SacADos.dat
